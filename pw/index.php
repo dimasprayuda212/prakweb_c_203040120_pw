@@ -12,6 +12,7 @@ $books = query("SELECT * FROM buku");
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, intial-scale=1.0">
 	<title>Daftar Buku</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 
