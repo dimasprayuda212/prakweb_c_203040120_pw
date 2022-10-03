@@ -1,4 +1,7 @@
 <?php 
+// Dimas Prayuda
+// 203040120
+// Praktikum Web
 
 require 'function.php';
 $books = query("SELECT * FROM buku");
