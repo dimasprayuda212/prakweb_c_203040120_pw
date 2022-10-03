@@ -34,49 +34,47 @@ if (isset($_POST['ubah'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ubah Data Mahasiswa</title>
+    <title>Ubah Data Buku</title>
 </head>
 
 <body>
-    <h3>Form Ubah Data Mahasiswa</h3>
+    <h3>Form Ubah Data Buku</h3>
     <form action="" method="POST" enctype="multipart/form-data">
         <input type="hidden" name="id" value="<?= $book['id']; ?>">
         <ul>
-            <li>
-                <label>
-                    Judul :
-                    <input type="text" name="judul" autofocus required value="<?= $book['judul']; ?>">
-                </label>
-            </li>
-            <li>
-                <label>
-                    Pengarang :
-                    <input type="text" name="pengarang" required value="<?= $book['pengarang']; ?>">
-                </label>
-            </li>
-            <li>
-                <label>
-                    Penerbit :
-                    <input type="text" name="penerbit" required value="<?= $book['penerbit']; ?>">
-                </label>
-            </li>
-            <li>
-                <label>
-                    Terbit :
-                    <input type="text" name="terbit" required value="<?= $book['terbit']; ?>">
-                </label>
-            </li>
-            <li>
-                <input type="hidden" name="img_lama" value="<?= $book['img']; ?>">
-                <label>
-                    Gambar :
-                    <input type="file" name="img" class="img" onchange="previewImage()">
-                </label>
-                <img src="img/<?= $book['img']; ?>" width="120" style="display: block;" class="img-preview">
-            </li>
-            <li>
-                <button type="submit" name="ubah">Ubah Data!</button>
-            </li>
+        <li>
+        <label>
+          Gambar :
+          <input type="text" name="img" autofocus required value="<?= $b['img']; ?>">
+        </label>
+      </li>
+      <li>
+        <label>
+          Judul :
+          <input type="text" name="judul" required value="<?= $b['judul']; ?>">
+        </label>
+      </li>
+      <li>
+        <label>
+          Pengarang :
+          <input type="text" name="pengarang" required value="<?= $b['pengarang']; ?>">
+        </label>
+      </li>
+      <li>
+        <label>
+          Penerbit :
+          <input type="text" name="penerbit" required value="<?= $b['penerbit']; ?>">
+        </label>
+      </li>
+      <li>
+        <label>
+          Terbit :
+          <input type="text" name="terbit" required value="<?= $b['terbit']; ?>">
+        </label>
+      </li>
+      <li>
+        <button type="submit" name="ubah">Ubah Data</button>
+      </li>
         </ul>
     </form>
 

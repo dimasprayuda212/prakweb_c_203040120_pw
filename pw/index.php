@@ -42,7 +42,8 @@ $books = query("SELECT * FROM buku");
 			<td><?= $book['penerbit']; ?></td>
 			<td><?= $book['terbit']; ?></td>
 			<td>
-			<a href="ubah.php?id=<?= $book['id']; ?>">ubah</a> | <a href="hapus.php?id=<?= $book['id']; ?>" onclick="return confirm('apakah anda yakin?');">hapus</a></li>
+			<a href="ubah.php?id=<?= $book['id']; ?>">ubah</a> | 
+			<a href="hapus.php?id=<?= $book['id']; ?>" onclick="return confirm('apakah anda yakin?');">hapus</a></li>
 			</td>
 		</tr>
 		<?php endforeach; ?>
